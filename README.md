@@ -1,4 +1,4 @@
 # Scripts
-Dengan Scripts Ini Build Kernel Jadi Lebih Mudah cukup Clone Sudah Bisa Di Gunakan
+With These Scripts, Build The Kernel Is Easier, Just Clone Can Be Used
 
 # Info Scripts
