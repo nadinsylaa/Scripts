@@ -14,8 +14,8 @@ if ! [[ -e $(pwd)/anykernel-3 ]]; then
     git clone --quiet --depth=1 https://github.com/RysepEchizen/anykernel3 -b merlin
 fi
 if ! [[ -e $(pwd)/gcc ]]; then
-    git clone --quiet --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b android-9.0.0_r57 gcc
-    git clone --quiet --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 -b android-9.0.0_r57 gcc32
+    git clone --quiet --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b android-11.0.0_r31 --depth=1 stock -b android-9.0.0_r57 gcc
+    git clone --quiet --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 -b android-11.0.0_r31 --depth=1 stock_32 -b android-9.0.0_r57 gcc32
 fi
 if [ -z $github_name ] && [ -z $github_email ]; then
     echo -e "empty git config user.name & git config user.email"
