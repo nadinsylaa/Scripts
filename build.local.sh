@@ -4,6 +4,7 @@
 # Copyright (C) 2019, 2020, Dicky Herlambang (@Nicklas373)
 # Copyright (C) 2019, 2020, Dhimas Bagus Prayoga (@kry9ton)
 # Copyright (C) 2020, Muhammad Fadlyas (@fadlyas07)
+# Copyright (C) 2021, Asep Mlnaa (@RysepEchizen)
 export ARCH=arm64
 export pack=$(pwd)/anykernel3
 export github_name=$(git config user.name)
