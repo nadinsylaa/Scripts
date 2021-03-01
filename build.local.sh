@@ -5,13 +5,13 @@
 # Copyright (C) 2019, 2020, Dhimas Bagus Prayoga (@kry9ton)
 # Copyright (C) 2020, Muhammad Fadlyas (@fadlyas07)
 export ARCH=arm64
-export pack=$(pwd)/anykernel-3
+export pack=$(pwd)/anykernel3
 export github_name=$(git config user.name)
 export github_email=$(git config user.email)
 export parse_branch=$(git rev-parse --abbrev-ref HEAD)
 export kernel_img=$(pwd)/out/arch/arm64/boot/Image.gz-dtb
 if ! [[ -e $(pwd)/anykernel-3 ]]; then
-    git clone --quiet --depth=1 https://github.com/fadlyas07/anykernel-3
+    git clone --quiet --depth=1 https://github.com/RysepEchizen/anykernel3 -b merlin
 fi
 if ! [[ -e $(pwd)/gcc ]]; then
     git clone --quiet --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b android-9.0.0_r57 gcc
