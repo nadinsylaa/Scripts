@@ -46,7 +46,7 @@ DEVICE="merlin"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=merlin-perf_defconfig
+DEFCONFIG=merlin_defconfig
 
 # Specify compiler. 
 # 'clang' or 'gcc'
