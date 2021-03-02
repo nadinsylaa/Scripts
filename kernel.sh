@@ -36,7 +36,7 @@ err() {
 KERNEL_DIR=$PWD
 
 # The name of the Kernel, to name the ZIP
-ZIPNAME="JandaXNabilla"
+ZIPNAME="RyzenX"
 
 # The name of the device for which the kernel is built
 MODEL="Redmi Note 9"
@@ -46,7 +46,7 @@ DEVICE="merlin"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=merlin_defconfig
+DEFCONFIG=merlin-perf_defconfig
 
 # Specify compiler. 
 # 'clang' or 'gcc'
