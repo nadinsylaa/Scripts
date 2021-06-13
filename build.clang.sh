@@ -14,7 +14,7 @@ make clean && make mrproper
 KERNEL_DIR=$PWD
 KERN_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz-dtb
 ZIP_DIR=$KERNEL_DIR/AnyKernel3
-CONFIG=sdm439_defconfig
+CONFIG=cherry-olive_defconfig
 CROSS_COMPILE="aarch64-linux-gnu-"
 CROSS_COMPILE_ARM32="arm-linux-gnueabi-"
 PATH=:"${KERNEL_DIR}/kapak-clang/bin:${PATH}:${KERNEL_DIR}/stock/bin:${PATH}:${KERNEL_DIR}/stock_32/bin:${PATH}"
