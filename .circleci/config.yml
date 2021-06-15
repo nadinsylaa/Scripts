@@ -1,0 +1,19 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: bryanhafidz/bryan-docker:0x02
+   steps:
+      - run:
+          command: |
+           git config --global user.name "nadinsylaa"
+           git config --global user.email "asepmlnaaa@gmail.com"
+           git clone https://github.com/nadinsylaa/Styrofoam 11
+           cd 11
+           chmod a+x gettools.sh
+           ./gettools.sh
+workflows:
+  version: 2.1
+  cooking:
+    jobs:
+      - compile
